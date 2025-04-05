@@ -1,0 +1,23 @@
+{
+  "name": "frontend-practice-homepage",
+  "version": "1.0.0",
+  "description": "The Frontend Practice homepage recreated with Tailwind CSS",
+  "scripts": {
+  "build": "npx tailwindcss -i ./src/input.css -o ./public/style.css --minify",
+  "watch": "npx tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+  },
+  "author": "Paul",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.1",
+    "tailwindcss": "^4.1.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  }
+}
